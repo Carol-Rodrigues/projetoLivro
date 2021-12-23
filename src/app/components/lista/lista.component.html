@@ -1,0 +1,52 @@
+<div class="text-center mt-3">
+    <button class="btn btn-danger" routerLink="/add">Cadastrar novo Livro </button>
+</div>
+
+<div class="container-fluid w-75 mt-3">
+    <table class="table table-hover  bg-light">
+        <thead>
+            <tr class="table-dark">
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Autor</th>
+                <th scope="col" class="text-center">Foto</th>
+                <th scope="col" class="text-center">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of livros" class="align-middle">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.nome}}</td>
+                <td>{{item.autor}}</td>
+                <td class="text-center">
+                    <!-- <button class="btn btn-secondary" routerLink="/cards">Clique aqui</button> -->
+                    <img [src]='item.foto' style="width: 100px;" routerLink="/cards">
+                </td>
+                <td class="text-center">
+                    <button (click)="editar(item.id)" class="btn btn-outline-light"><i
+                            class="bi bi-bookmark-star-fill text-warning" style="font-size: 25px;"
+                            title="Editar"></i></button>
+                    <span class="mx-1"></span>
+                    <button (click)="mostrarModal(item.id)" class="btn btn-outline-light"><i
+                            class="bi bi-bookmark-x-fill text-danger" style="font-size: 25px;"
+                            title="Deletar"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div *ngIf="isModal">
+    <div class="minhaModal">
+        <div class="tituloModal bg-danger text-white">
+            <h5>Aviso!</h5>
+        </div>
+        <h6 class="my-4">Confirma essa operação?</h6>
+        <button class="btn btn-danger mx-1" (click)="confirmarAcao()">Confirmar</button>
+        <button class="btn btn-outline-warning mx-1" (click)="cancelarAcao()">Cancelar</button>
+    </div>
+</div>
+<!-- <div *ngIf="modalLivro">
+    <div class="minhaModal2 card" style="width: 300px;" [ngSwitch]="let fotos of livros">
+        <p *ngSwitchCase=""><img [src]='item.foto' style="width: 100px;"></p>
+    </div>
+</div> -->

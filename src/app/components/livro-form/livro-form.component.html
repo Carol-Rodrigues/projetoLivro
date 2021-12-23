@@ -1,0 +1,80 @@
+
+<!-- <div class="container">
+    <div class="col">
+        <form action="">
+            <div class="mb-1">
+                <label for="form-label"> Livro</label>
+                <input type="text" class="form-control" name="nome" placeholder="Digite o nome do livro.." [(ngModel)]="livro.nome"/>
+            </div>
+            <div class="mb-1">
+                <label for="form-label"> Autor(a) </label>
+                <input type="text" class="form-control" name="valor" placeholder="Digite o nome do(a) autor(a).." [(ngModel)]="livro.autor"/>
+            </div>
+            <div class="mb-1">
+                <label for="form-label"> Foto</label>
+                <input type="text" class="form-control" name="foto" placeholder="Digite o caminho da foto.." [(ngModel)]="livro.foto"/>
+            </div>
+            <div class="mt-5">
+                <button type="submit" class="btn btn-success mx-1" (click)="criarLivro()">Salvar</button>
+                <button type="submit" class="btn btn-outline-warning mx-1" (click)="editar()">Alterar</button>
+                <button type="reset" class="btn btn-outline-danger mx-1" (click)="cancelar()">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div> -->
+
+<div class="container bg-light p-3 mt-5" style="width: 30%; box-shadow: rgb(20, 20, 20) 3px 3px 10px 8px;">
+    <h3 class="text-center">Cadastro de Livros</h3>
+    <div class="row">
+        <div class="col-12">
+            <div class="formulario">
+                <form [formGroup]="form">
+                    <div class="row mb-3">
+                        <label class="col-form-label">Nome do Livro:</label>
+                        <div>
+                            <input type="text" class="form-control" id="nome" formControlName="nome">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-form-label">Autor do Livro:</label>
+                        <div>
+                            <input type="text" class="form-control" id="autor" formControlName="autor">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-form-label">Foto do Livro:</label>
+                        <div>
+                            <input type="text" class="form-control" id="foto" formControlName="foto" placeholder="Digite o caminho do arquivo..">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-form-label">Link do Livro:</label>
+                        <div>
+                            <input type="text" class="form-control" id="link" formControlName="link" placeholder="Digite o caminho da compra..">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div *ngIf="verificarStatus; then cadastrar else alterar"></div>
+                        <ng-template #cadastrar><button class="btn btn-warning mx-1" (click)="mostrarModal()">Salvar</button></ng-template>
+                        <ng-template #alterar><button class="btn btn-warning mx-1" (click)="mostrarModal()">Editar</button></ng-template>
+                        <button type="reset" class="btn btn-outline-danger mx-1" (click)="cancelar()">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="foto">
+            </div>
+        </div>
+
+    </div>
+</div>
+<div *ngIf = "isModal">
+    <div class="minhaModal">
+        <div class="tituloModal bg-success text-white">
+            <h5>Obrigade!</h5>
+        </div>
+        <h6 class="my-4">Livro cadastrado com sucesso!!</h6>
+        <button class="btn btn-success mx-1" (click)="confirmarAcao()">Ok</button>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+{
+  "Livros": [
+    {
+      "id": 7,
+      "nome": "Os Sete",
+      "autor": "André Vianco",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/41OJm6e2ezL._SX359_BO1,204,203,200_.jpg",
+      "link": "https://www.amazon.com.br/Os-Sete-Andr%C3%A9-Vianco/dp/8587791052/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=19CHTZBLCGLEM&keywords=os+sete&qid=1640203848&sprefix=os+sete%2Caps%2C344&sr=8-2"
+    },
+    {
+      "id": 9,
+      "nome": "Sétimo",
+      "autor": "André Vianco",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51k5IRv3nyL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+      "link": "https://www.amazon.com.br/S%C3%A9timo-Andre-Vianco/dp/857657344X/ref=asc_df_857657344X/?tag=googleshopp00-20&linkCode=df0&hvadid=379721113837&hvpos=&hvnetw=g&hvrand=12008543965862745825&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031829&hvtargid=pla-811104532691&psc=1"
+    },
+    {
+      "id": 10,
+      "nome": "Mulheres, Mitos e Deusas",
+      "autor": "Matha Robles",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51am0y1DutL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+      "link": "https://www.amazon.com.br/Mulheres-Mitos-Deusas-feminino-atrav%C3%A9s/dp/8576574543/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1CU2NJPFCF2DO&keywords=mulheres+mitos+e+deusas&qid=1640203770&sprefix=mulheres+mitos+e+deusas%2Caps%2C195&sr=8-4"
+    },
+    {
+      "id": 11,
+      "nome": "A Vida de Galileu",
+      "autor": "Bertolt Brecht",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/514KvAla6JL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+      "link": "https://www.amazon.com.br/Galileo-Bertolt-Brecht/dp/0802130593/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=30U6OACIP2EJI&keywords=a+vida+de+galileu&qid=1640203797&sprefix=a+vida+de+galileu%2Caps%2C276&sr=8-4"
+    },
+    {
+      "id": 12,
+      "nome": "Amores impossíveis e outras perturbações quânticas",
+      "autor": "Lucas Silveira",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/41-XpSaT8rL._SX315_BO1,204,203,200_.jpg",
+      "link": "https://www.amazon.com.br/Amores-Imposs%C3%ADveis-Outras-Perturba%C3%A7%C3%B5es-Qu%C3%A2nticas/dp/8583180822/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=DDZ3PJIUKC06&keywords=amores+impossiveis&qid=1640203826&sprefix=amores+impossivei%2Caps%2C291&sr=8-1"
+    },
+    {
+      "id": 13,
+      "nome": "Hamlet",
+      "autor": "Shakespeare",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/41ZBz2eVteL._SX298_BO1,204,203,200_.jpg",
+      "link": "https://www.amazon.com.br/Hamlet-Cole%C3%A7%C3%A3o-Pocket-William-Shakespeare/dp/8525406112/ref=asc_df_8525406112/?tag=googleshopp00-20&linkCode=df0&hvadid=379799549714&hvpos=&hvnetw=g&hvrand=17713883528032852872&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031829&hvtargid=pla-387848315643&psc=1"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+.minhaimagem { 
+    transition: 0.5s; 
+}
+.minhaimagem:hover { 
+    transform: scale(1.15); 
+}
